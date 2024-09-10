@@ -19,11 +19,34 @@ body {
   color: aliceblue;
 
   display: grid;
-  grid-auto-flow: row;
+  /* grid-auto-flow: row; */
+  grid-template-rows: 1fr 5fr 4fr;
 
-  padding:  1vw 1vw 45vh 1vw ;
+  padding:  1vw 1vw 40vh 1vw ;
 
 }
+
+div.dashboard {
+  font-size: 2vw;
+}
+
+ul {
+  list-style-type: none;
+  display: grid;
+  gap: 2vh;
+  font-size: 2vw;
+  padding: 0;
+  
+}
+
+/* sidebar grid properties */
+div > span {
+  margin: 1vw;
+
+}
+
+/* end sidebar grid properties */
+
 
 .header {
   grid-row: 1 / 2;
