@@ -75,7 +75,7 @@ ul > li > span {
 }
 
 input {
-  background-color: whitesmoke;
+  background-color: rgba(196, 196, 196, 0.5);
   border-style: none;
   border-radius: 15px;
   min-width: 35vw;
@@ -160,12 +160,13 @@ button {
 .main-content {
   grid-row: 2 / 3;
   grid-column: 2 / 3 ;
-  background-color: whitesmoke;
+  background-color: rgba(196, 196, 196, 0.5);
 
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
 
+  padding-bottom: 4vh;
 
 }
 
@@ -178,6 +179,22 @@ button {
   grid-template-rows: 1fr 5fr 5fr 5fr;
 }
 
+.title {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  align-self: end;
+}
+
+.projects {
+  border-radius: 15px;
+  background-color: white ;
+  margin: 1vw;
+}
+
+
+
+
+
 .announcements {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
@@ -185,6 +202,23 @@ button {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 10fr;
+
+  border-radius: 15px;
+  background-color: white ;
+  margin: 1vw;
+}
+
+.announcements > .title {
+  grid-row: 1 / 2;
+}
+
+.announcement-box {
+  
+  grid-row: 2 / 3;
+
+  border-radius: 15px;
+  background-color: white ;
+  margin: 1vw;
 }
 
 .trending {
