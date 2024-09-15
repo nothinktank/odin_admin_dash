@@ -1,3 +1,9 @@
+* { 
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+   box-sizing: border-box; 
+}
+
 body {
   margin: 0;
 }
@@ -167,6 +173,7 @@ button {
   grid-template-rows: 0.6fr 5fr 5fr;
 
   padding-bottom: 4vh;
+  padding-left: .5vw;
 
 }
 
@@ -177,6 +184,8 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  gap: .5vw;
+
 }
 
 .title {
@@ -189,9 +198,16 @@ button {
 }
 
 .projects {
-  border-radius: 15px;
+  border-radius: 1vw;
   background-color: white ;
-  margin: 1vw;
+  margin: .5vw;
+  /* max-height: 155px; */
+
+  display: grid;
+  /* gap: 20px; */
+  grid-template-rows: 1fr 5fr 2fr;
+  padding: 2vw 1vw;
+
 }
 
 
@@ -236,9 +252,6 @@ button {
 .trending-box {
   
   grid-row: 2 / 6;
-
-
-
   
   border-radius: 15px;
   background-color: white ;
