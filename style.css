@@ -180,6 +180,7 @@ button {
 .your-projects {
   grid-column: 1 / 2;
   grid-row: 2 / 4 ;
+  
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -200,14 +201,28 @@ button {
 .projects {
   border-radius: 1vw;
   background-color: white ;
-  margin: .5vw;
+  margin: 2%;
   /* max-height: 155px; */
 
   display: grid;
   /* gap: 20px; */
-  grid-template-rows: 1fr 5fr 2fr;
-  padding: 2vw 1vw;
+  grid-template-rows: 1fr 4fr 2fr;
+  padding: 3vw 1.6vw;
+  
 
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 60%;
+
+  align-self: end;
+  
+}
+
+svg {
+  max-width: 2vw;
 }
 
 
