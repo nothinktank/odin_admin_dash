@@ -199,6 +199,10 @@ button {
 }
 
 .projects {
+  border-left-style:solid ;
+  border-left-width: 1.008vw;
+  border-color: coral;
+
   border-radius: 1vw;
   background-color: white ;
   margin: 2%;
@@ -211,6 +215,10 @@ button {
   
 
 }
+
+/* .wrapper {
+  z-index: 10;
+} */
 
 .options {
   display: grid;
@@ -247,11 +255,11 @@ svg {
   grid-row: 1 / 2;
 }
 
-.announcement-box {
+/* .announcement-box {
   
 
   
-}
+} */
 
 .trending {
   grid-column: 2 / 3;
