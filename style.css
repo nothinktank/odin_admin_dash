@@ -196,6 +196,15 @@ button {
   display: grid;
   grid-template-columns: 3fr 1fr;
   align-self: end;
+  
+}
+
+.title > div {
+  padding-left: 1vw;
+}
+
+.trending-title {
+  padding-left: 1vw;
 }
 
 .projects {
@@ -240,26 +249,50 @@ svg {
 .announcements {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+  /* margin-left: 1vw; */
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  grid-auto-flow: row;
+  gap: 0.2vh;
+  
+
 
   border-radius: 15px;
-  background-color: white ;
+  background-color: rgb(242, 242, 242) ;
   margin: 1vw;
+
+  border-style: solid;
+  border-width: 2.5vw;
+  border-color: white;
+
+  /* padding: 2.5vw; */
   
 }
 
-.announcements > .title {
+/* .announcement-title {
   grid-row: 1 / 2;
+} */
+
+.announcement-box {
+  display: grid;
+  background-color: white;
+  
+  
 }
 
-/* .announcement-box {
+.announcement-title {
+  align-self: end;
+  font-size: 1.1vw ;
   
+  font-weight: bold;
+}
 
-  
-} */
+.announcement-description {
+  font-size: 1vw ;
+  color: gray;
+}
 
 .trending {
   grid-column: 2 / 3;
